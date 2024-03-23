@@ -38,7 +38,7 @@ function showTodo(filter) {
         });
     }
 
-    taskBox.innerHTML = liTag || `<img src="depression.png" class="depressionImg"><span class="noTasks">You don't have any task here</span>`;
+    taskBox.innerHTML = liTag || `<img src="images/depression.png" class="depressionImg"><span class="noTasks">You don't have any task here</span>`;
     let checkTask = taskBox.querySelectorAll(".task");
     !checkTask.length ? clearAll.classList.remove("active") : clearAll.classList.add("active");
     taskBox.offsetHeight >= 300 ? taskBox.classList.add("overflow") : taskBox.classList.remove("overflow");
